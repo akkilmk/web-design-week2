@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+}
+
+.navbar-nav li:hover>ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu>li>a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+
+.first_background_image {
+    background-image: url("https://images.ctfassets.net/6igiux0rebzg/1FArzTrjZmLKQe8Tlv6eVR/ec6cc8353e4cd805a03bd442acc822de/32365_20210429_FW_Colorado_Shot4_0404.jpg?w=1920&h=1080&fit=fill&f=faces&q=75");
+
+    background-size: cover;
+    height: 38em;
+    width: 100%;
+    text-align: center;
+    /* justify-content: end; */
+    /* position:fixed; */
+}
+
+@media(min-width:700px) {
+    .first_background_image {
+        background-attachment: fixed;
+    }
+}
+
+.text {
+    font-family: "Trivia Slab, Arial, Helvetica, sans-serif";
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 600;
+    font-weight: bolder;
+
+}
+
+.text h2 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.text h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.button_click_first {
+    padding: 30px;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+@media(min-width:700px) {
+
+    /* html body a hr.line{ */
+    .line {
+
+        margin-top: 8em;
+    }
+
+}
+
+
+.column-1 {
+    background-image: url(https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/245561195_556717105398826_8810461688592246486_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_cat=110&_nc_ohc=Roo_dLmlCggAX8-5L2I&edm=AMO9-JQAAAAA&ccb=7-4&oh=c1ab00aaf09af13707947de9c184199b&oe=6179AD1F&_nc_sid=b9f2ee);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.text1 {
+   
+   
+    top: 0px;
+
+    background-size: cover;
+     /* background: url(https://imgr.search.brave.com/_ck-yiiJ3I-JwcTVbYbRPkyt6nebXpW6WL6yF1TRsyw/fit/820/880/ce/1/aHR0cHM6Ly93d3cu/cG5na2V5LmNvbS9w/bmcvZGV0YWlsLzEt/MTMzNzRfaW5zdGFn/cmFtLWljb24tbmV3/LWJsYWNrLWJhY2tn/cm91bmQtdmVjdG9y/LWxvZ28taW5zdGFn/cmFtLnBuZw) no-repeat; */
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.column-1:hover .text1 {
+    opacity: 0.6;
+}
+
+.column-2{
+    background-image: url(https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/245871844_310531583770788_6401368421349275227_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_cat=100&_nc_ohc=s7rqiQrasSMAX_3Vwg_&edm=AMO9-JQAAAAA&ccb=7-4&oh=652152f64fe9b439c04531d6843dac34&oe=61794712&_nc_sid=b9f2ee);   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.column-2:hover .text1 {
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+.contianer-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "column-1 column-2 main main"
+        "column-3 column-4 main main"
+    ;
+    grid-gap: .8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+.column-1 {
+    background-color: yellow;
+    grid-area: column-1;
+
+
+
+}
+
+.column-2 {
+    background-color: rgb(94, 94, 51);
+    grid-area: column-2;
+
+
+}
+
+.column-3 {
+    background-color: rgb(208, 200, 218);
+    grid-area: column-3;
+
+
+}
+
+.column-4 {
+    background-color: rgb(48, 48, 45);
+    grid-area: column-4;
+
+
+}
+
+.main {
+    background-color: rgb(65, 64, 136);
+    grid-area: main;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .contianer-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "column-1 column-2"
+            "column-1 column-2"
+            "column-1 column-2"
+            "main main"
+            "main main"
+            "main main"
+            "main main"
+            "main main"
+            "main main"
+            "column-3 column-4"
+            "column-3 column-4"
+            "column-3 column-4"
+        ;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+    .footer_para {
+        flex-direction: column;
+    }
+
+}
+
+
+.footer_background {
+    background-image: url("https://images.ctfassets.net/6igiux0rebzg/66tteSxQJn1QoaRaTw2mm0/b936dfaedf2370c7cabe0bc480c9f805/footer-polo-player-2.jpg");
+    background-size: cover;
+    height: 48rem;
+    /* background: radial-gradient(circle farthest-side, #56ab2f, #a8e063); */
+    opacity: 1;
+
+}
+
+footer .container-fluid {
+    background: radial-gradient(circle farthest-side, #56ab2f, #a8e063);
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff));
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(hsla(0, 0%, 100%, 0)));
+    background: linear-gradient(0deg, #fff, hsla(0, 0%, 100%, 0));
+}
+
+
+
+@media(max-width:700px) {
+
+    .footer_image {
+        display: flex;
+        justify-content: start !important;
+
+    }
+
+
+}
+
+/* 
+   .footer_para{
+       display: flex;
+   } */
+
+.button_view_insta {
+
+    height: 3rem;
+    font-weight: bolder;
+    margin-left: 3rem;
+    letter-spacing: .5rem;
+    font-size: medium;
+    width: 92%;
+    background-color: #ffffff;
+    border: 0;
+    color: rgb(0, 0, 0);
+
+}
+
+@media(max-width:700px) {
+
+    .button_view_insta {
+        margin-left: 1%;
+        font-size: .8rem;
+    }
+
+    .heading {
+        font-size: .8rem;
+    }
+
+    .search {
+        width: 20rem;
+    }
+
+    .button_class {
+        width: 1rem;
+    }
+}
